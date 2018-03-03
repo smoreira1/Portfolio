@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class='nav-header'>
+  <mat-toolbar-row class="nav-header-grid">
+    <span class='nav-header-item-user'>Stephen D. Moreira</span>
+    <div class='nav-header-item-navigation'>
+      <button mat-button color="basic" routerLink="/about" routerLinkActive="active">About Me</button>
+      <button mat-button color="basic" routerLink="/applications" routerLinkActive="active">Software Applications</button>
+      <button mat-button color="basic" routerLink="/programming" routerLinkActive="active">Programming Languages</button>
+      <button mat-button color="basic" routerLink="/soft" routerLinkActive="active">Soft Skills</button>
+    </div>
+    <div class='nav-header-item-social'>
+      <button mat-button [matMenuTriggerFor]="menu">Social</button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item href="https://github.com/smoreira1" target="_blank">
+          <img src='/assets/github.svg' style="height:20px;width:20px;"/> Github
+        </a>
+        <a mat-menu-item href="https://www.youtube.com/channel/UCoj8TSkQzGJ08UamZx8NoLg" target="_blank">
+          <img src='/assets/youtube.svg' style="height:20px;width:20px;" /> Youtube
+        </a>
+        <a mat-menu-item href='https://npcomplete.blog/' target="_blank">
+          <img src='/assets/wordpress.svg' style="height:20px;width:20px;" /> Blog</a>
+        <a mat-menu-item href="https://twitter.com/NPCompleteMe" target="_blank">
+          <img src='/assets/twitter.svg' style="height:20px;width:20px;"/> Twitter
+        </a>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

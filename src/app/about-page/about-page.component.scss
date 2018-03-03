@@ -1,0 +1,42 @@
+.about-me-card{
+    margin:25px;
+}
+
+.avatar{
+    background-image: url('/assets/stephen.jpg');
+    background-size: cover;
+}
+
+.about-me-card-header{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "aboutName resume";
+}
+
+.header-name{
+    grid-area: aboutName;
+}
+
+.header-resume{
+    justify-self: end;
+    grid-area: resume;
+}
+
+
+.about-page-content-grid{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "text image";
+
+}
+
+.about-page-content-text{
+    grid-area: text;
+}
+
+
+.about-page-content-image{
+    grid-area: image;
+}
