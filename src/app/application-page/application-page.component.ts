@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Application } from './application';
+import { APPLICATIONS } from './mock-applications';
+
+
+
 
 @Component({
   selector: 'app-application-page',
@@ -6,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./application-page.component.scss']
 })
 export class ApplicationPageComponent implements OnInit {
+
+  applications = APPLICATIONS;
 
   constructor() { }
 
