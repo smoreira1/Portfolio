@@ -9,6 +9,7 @@ import { PROGRAMMING } from './mock-programming';
 })
 export class ProgrammingPageComponent implements OnInit {
 
+    programming = PROGRAMMING;
   constructor() { }
 
   ngOnInit() {
