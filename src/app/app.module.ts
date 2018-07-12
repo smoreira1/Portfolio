@@ -8,6 +8,16 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import { Routes, RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
+import {CdkTableModule} from '@angular/cdk/table';
+
+
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +27,7 @@ import { ApplicationPageComponent } from './application-page/application-page.co
 import { ProgrammingPageComponent } from './programming-page/programming-page.component';
 import { SoftPageComponent } from './soft-page/soft-page.component';
 import { PortfolioFooterComponent } from './portfolio-footer/portfolio-footer.component';
+import { SampleProjectsComponent } from './sample-projects/sample-projects.component';
 
 
 
@@ -25,7 +36,8 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutPageComponent },
   { path: 'applications', component: ApplicationPageComponent },
   { path: 'programming', component: ProgrammingPageComponent },
-  { path: 'soft', component: SoftPageComponent }
+  { path: 'soft', component: SoftPageComponent },
+  { path: 'sample-projects', component: SampleProjectsComponent },
 ];
 
 
@@ -37,7 +49,8 @@ const appRoutes: Routes = [
     ApplicationPageComponent,
     ProgrammingPageComponent,
     SoftPageComponent,
-    PortfolioFooterComponent
+    PortfolioFooterComponent,
+    SampleProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +58,14 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
+    MatIconModule,
+    MatListModule,
+    CdkTableModule,
     BrowserAnimationsModule,
+    HttpModule,
+    HttpClientModule,
+    MatExpansionModule,
+    MatTableModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
