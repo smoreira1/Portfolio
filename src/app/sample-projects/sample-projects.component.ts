@@ -39,6 +39,7 @@ export interface PeriodicElement {
   Status: string;
   URL: string;
   description: string;
+  Technologies: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -49,6 +50,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Private',
     Status: 'Under Development',
     URL: 'www.artropy.net',
+    Technologies: `Angular 6, Angular Material, Apollo, CSS Grid, CSS FlexBox, Media Queries, SASS TypeScript, GraphQL`,
     description: `Progressive Web Application, Artist Content Creation Platform aimmed at helping artists profit and spread
     their artwork around the world.`
   }, {
@@ -57,7 +59,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 4.0026,
     Source: 'Open Source',
     Status: 'Past Project',
-    URL: '',
+    URL: 'https://pdms-grocery-list.azurewebsites.net',
+    Technologies: ``,
     description: `Helium is a chemical element with Source He and atomic number 2. It is a
         colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas
         group in the periodic table. Its boiling point is the lowest among all the elements.`
@@ -68,6 +71,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Open Source',
     Status: 'Under Development',
     URL: '',
+    Technologies: ``,
     description: `Lithium is a chemical element with Source Li and atomic number 3. It is a soft,
         silvery-white alkali metal. Under standard conditions, it is the lightest metal and the
         lightest solid element.`
@@ -78,6 +82,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Open Source',
     Status: 'Under Development',
     URL: '',
+    Technologies: ``,
     description: `Beryllium is a chemical element with Source Be and atomic number 4. It is a
         relatively rare element in the universe, usually occurring as a product of the spallation of
         larger atomic nuclei that have collided with cosmic rays.`
@@ -88,6 +93,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Boron is a chemical element with Source B and atomic number 5. Produced entirely
         by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a
         low-abundance element in the Solar system and in the Earth's crust.`
@@ -98,6 +104,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Carbon is a chemical element with Source C and atomic number 6. It is nonmetallic
         and tetravalent—making four electrons available to form covalent chemical bonds. It belongs
         to group 14 of the periodic table.`
@@ -108,6 +115,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Nitrogen is a chemical element with Source N and atomic number 7. It was first
         discovered and isolated by Scottish physician Daniel Rutherford in 1772.`
   }, {
@@ -117,6 +125,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Oxygen is a chemical element with Source O and atomic number 8. It is a member of
          the chalcogen group on the periodic table, a highly reactive nonmetal, and an oxidizing
          agent that readily forms oxides with most elements as well as with other compounds.`
@@ -127,6 +136,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Fluorine is a chemical element with Source F and atomic number 9. It is the
         lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard
         conditions.`
@@ -137,6 +147,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -148,6 +159,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -159,6 +171,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -170,6 +183,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -181,6 +195,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Proprietary',
     Status: 'Past Project',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -192,17 +207,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Open Source',
     Status: 'Under Development',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
   },
   {
     position: 14,
-    Name: 'Video Stream',
+    Name: 'Project Carrot',
     weight: 20.1797,
     Source: 'Private',
     Status: 'System Design Phase',
     URL: '',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
@@ -214,6 +231,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Source: 'Open Source',
     Status: 'Design Phase',
     URL: '',
+    Technologies: ``,
+    description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
+        Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
+        two-thirds the density of air.`
+  },
+  {
+    position: 16,
+    Name: 'Portfolio',
+    weight: 20.1797,
+    Source: 'Open Source',
+    Status: 'Past Project',
+    URL: 'www.smoreira.org',
+    Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
         two-thirds the density of air.`
