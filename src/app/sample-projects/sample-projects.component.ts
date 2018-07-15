@@ -19,7 +19,7 @@ import { DataSource } from '@angular/cdk/table';
 })
 export class SampleProjectsComponent implements OnInit {
   dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['Name', 'Technologies', 'Status', 'URL', 'Source'];
+  columnsToDisplay = ['Name', 'Status', 'URL', 'Source'];
   expandedElement: PeriodicElement;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
@@ -242,7 +242,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Open Source',
     Status: 'Past Project',
-    URL: 'www.smoreira.org',
+    URL: 'https://smoreira1.github.io',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about

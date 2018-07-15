@@ -37,7 +37,7 @@ const appRoutes: Routes = [
   { path: 'applications', component: ApplicationPageComponent },
   { path: 'programming', component: ProgrammingPageComponent },
   { path: 'soft', component: SoftPageComponent },
-  { path: 'sample-projects', component: SampleProjectsComponent },
+  { path: 'projects', component: SampleProjectsComponent },
 ];
 
 

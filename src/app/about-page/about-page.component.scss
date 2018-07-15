@@ -1,5 +1,5 @@
 .about-me-card{
-    margin:25px;
+    margin-top:25px;
 }
 
 .avatar{
@@ -21,6 +21,10 @@
 .header-resume{
     justify-self: end;
     grid-area: resume;
+}
+
+p{
+    font-size: 16px;
 }
 
 

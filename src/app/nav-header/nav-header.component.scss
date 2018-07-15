@@ -1,58 +1,53 @@
 
-    .nav-header{ 
-        position: fixed;
-        top: 0;
-        width: 100%;
-        left: 0;
-        padding:0;
-        margin:0;
-        z-index: 1000;
-        margin-bottom:70px;
-        display:flex;
-    }
-    
-    .nav-header-grid{
-        display:grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows : 100%;
-        grid-template-areas: "user navigation social";
-    }
-    
-    .nav-header-item-user{
-        grid-area: user;
-        justify-self: start; 
-    }
-    
-    .nav-header-item-navigation{
-        grid-area: navigation;
-        justify-self: left;
-    }
-    
-    .nav-header-item-navigation > button{
-       // background-color:white;
-       color:white;
-    }
-    
-    .nav-header-item-social{
-        grid-area: social;
-        justify-self: end;
-    }
-    
-    p {
-        font-size:16px;
-    }
- 
-    .spacer{
-        flex-grow: 1;
-    }
+.nav-header{ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding:0;
+    margin:0;
+    z-index: 1000;
+    margin-bottom:70px;
+    display:flex;
+}
+
+.nav-header-grid{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows : 100%;
+    grid-template-areas: "user navigation social";
+}
+
+.nav-header-item-user{
+    grid-area: user;
+    justify-self: start; 
+}
+
+.nav-header-item-navigation{
+    grid-area: navigation;
+    justify-self: left;
+}
+
+.nav-header-item-navigation > button{
+    // background-color:white;
+    color:white;
+}
+
+.nav-header-item-social{
+    grid-area: social;
+    justify-self: end;
+}
+
+p {
+    font-size:16px;
+}
+
+.spacer{
+    flex-grow: 1;
+}
 
 
-    .github-link {
-        color:white;
-      }
+.github-link {
+    fill:white;
+}
 
-@media (max-width: 1000px) { 
-
-
-
- }
