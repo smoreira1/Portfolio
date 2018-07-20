@@ -25,6 +25,7 @@ export class SampleProjectsComponent implements OnInit {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('folder', sanitizer.bypassSecurityTrustResourceUrl('assets/folder.svg'));
     iconRegistry.addSvgIcon('github', sanitizer.bypassSecurityTrustResourceUrl('assets/github.svg'));
+    iconRegistry.addSvgIcon('warning', sanitizer.bypassSecurityTrustResourceUrl('assets/warning.svg'));
   }
 
   ngOnInit() {
@@ -49,10 +50,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 1.0079,
     Source: 'Private',
     Status: 'Under Development',
-    URL: 'www.artropy.net',
+    URL: 'https://artropy-dev-1.azurewebsites.net/',
     Technologies: `Angular 6, Angular Material, Apollo, CSS Grid, CSS FlexBox, Media Queries, SASS TypeScript, GraphQL`,
     description: `Progressive Web Application, Artist Content Creation Platform aimmed at helping artists profit and spread
-    their artwork around the world.`
+    their artwork around the world. Intently following the progressive web application principles`
   }, {
     position: 2,
     Name: 'Gorcery List',
@@ -61,60 +62,33 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Status: 'Past Project',
     URL: 'https://pdms-grocery-list.azurewebsites.net',
     Technologies: ``,
-    description: `Helium is a chemical element with Source He and atomic number 2. It is a
-        colorless, odorless, tasteless, non-toxic, inert, monatomic gas, the first in the noble gas
-        group in the periodic table. Its boiling point is the lowest among all the elements.`
-  }, {
-    position: 3,
-    Name: 'CSS Grid Example',
-    weight: 6.941,
-    Source: 'Open Source',
-    Status: 'Under Development',
-    URL: '',
-    Technologies: ``,
-    description: `Lithium is a chemical element with Source Li and atomic number 3. It is a soft,
-        silvery-white alkali metal. Under standard conditions, it is the lightest metal and the
-        lightest solid element.`
-  }, {
-    position: 4,
-    Name: 'Angular2+ Lazy Loading',
-    weight: 9.0122,
-    Source: 'Open Source',
-    Status: 'Under Development',
-    URL: '',
-    Technologies: ``,
-    description: `Beryllium is a chemical element with Source Be and atomic number 4. It is a
-        relatively rare element in the universe, usually occurring as a product of the spallation of
-        larger atomic nuclei that have collided with cosmic rays.`
+    description: `Assetment Application using technologies: AngularJS 1.5, TypeScript, Bootstrap, Less.`
   }, {
     position: 5,
     Name: 'Smart Material, Receiving & Tracking',
     weight: 10.811,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
-    description: `Boron is a chemical element with Source B and atomic number 5. Produced entirely
-        by cosmic ray spallation and supernovae and not by stellar nucleosynthesis, it is a
-        low-abundance element in the Solar system and in the Earth's crust.`
+    description: `Application created for the receiving department. Using technologies like Angular 1.4.5, PHP, JQUERY, Bootstrap3, PL/SQL`
   }, {
     position: 6,
     Name: 'A.L.I.S Check List',
     weight: 12.0107,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
-    description: `Carbon is a chemical element with Source C and atomic number 6. It is nonmetallic
-        and tetravalent—making four electrons available to form covalent chemical bonds. It belongs
-        to group 14 of the periodic table.`
+    description: `Application created for the receiving department. Using technologies like Angular 1.4.5, PHP, JQUERY, JQUERY Datatables,
+     Bootstrap3, PL/SQL`
   }, {
     position: 7,
     Name: 'Whiteboard',
     weight: 14.0067,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Nitrogen is a chemical element with Source N and atomic number 7. It was first
         discovered and isolated by Scottish physician Daniel Rutherford in 1772.`
@@ -124,7 +98,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 15.9994,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Oxygen is a chemical element with Source O and atomic number 8. It is a member of
          the chalcogen group on the periodic table, a highly reactive nonmetal, and an oxidizing
@@ -135,7 +109,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 18.9984,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Fluorine is a chemical element with Source F and atomic number 9. It is the
         lightest halogen and exists as a highly toxic pale yellow diatomic gas at standard
@@ -146,7 +120,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
@@ -158,7 +132,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
@@ -170,7 +144,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
@@ -182,7 +156,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
@@ -194,7 +168,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Proprietary',
     Status: 'Past Project',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
     description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
         Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
@@ -206,11 +180,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Open Source',
     Status: 'Under Development',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
-    description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
-        Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
-        two-thirds the density of air.`
+    description: `Educational Project exploring and reinforcing Vanilla JavaScript ES5/ES6 skills`
   },
   {
     position: 14,
@@ -218,11 +190,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Private',
     Status: 'System Design Phase',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
-    description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
-        Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
-        two-thirds the density of air.`
+    description: `Streaming project following progressive web application principles. Using technologies such as Angular, Angular Material
+    CSS3 Grid, TypeScript, VSTS etc. This project has a heavy reliance on Azure Media platform for streaming.`
   },
   {
     position: 15,
@@ -230,11 +201,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
     weight: 20.1797,
     Source: 'Open Source',
     Status: 'Design Phase',
-    URL: '',
+    URL: 'n/a',
     Technologies: ``,
-    description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
-        Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
-        two-thirds the density of air.`
+    description: `Angular Elements Library. Currenlty under research and development, intended to be open source.`
   },
   {
     position: 16,
@@ -244,8 +213,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Status: 'Past Project',
     URL: 'https://smoreira1.github.io',
     Technologies: ``,
-    description: `Neon is a chemical element with Source Ne and atomic number 10. It is a noble gas.
-        Neon is a colorless, odorless, inert monatomic gas under standard conditions, with about
-        two-thirds the density of air.`
+    description: `Created in Angular 6, Angular Material, purpose to have a friendly way to show professional information of 
+    Stephen Moreira`
   },
 ];

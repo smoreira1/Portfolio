@@ -23,8 +23,6 @@ import {CdkTableModule} from '@angular/cdk/table';
 import { AppRoutingModule } from './app-routing.module';
 import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { AboutPageComponent } from './about-page/about-page.component';
-import { ApplicationPageComponent } from './application-page/application-page.component';
-import { ProgrammingPageComponent } from './programming-page/programming-page.component';
 import { SoftPageComponent } from './soft-page/soft-page.component';
 import { PortfolioFooterComponent } from './portfolio-footer/portfolio-footer.component';
 import { SampleProjectsComponent } from './sample-projects/sample-projects.component';
@@ -34,8 +32,6 @@ import { SampleProjectsComponent } from './sample-projects/sample-projects.compo
 const appRoutes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
   { path: 'about', component: AboutPageComponent },
-  { path: 'applications', component: ApplicationPageComponent },
-  { path: 'programming', component: ProgrammingPageComponent },
   { path: 'soft', component: SoftPageComponent },
   { path: 'projects', component: SampleProjectsComponent },
 ];
@@ -46,8 +42,6 @@ const appRoutes: Routes = [
     AppComponent,
     NavHeaderComponent,
     AboutPageComponent,
-    ApplicationPageComponent,
-    ProgrammingPageComponent,
     SoftPageComponent,
     PortfolioFooterComponent,
     SampleProjectsComponent

@@ -9,7 +9,7 @@
 
 .about-me-card-header{
     display:grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
     grid-template-areas: "aboutName resume";
 }
@@ -21,6 +21,10 @@
 .header-resume{
     justify-self: end;
     grid-area: resume;
+}
+
+.resume {
+    padding:5px;
 }
 
 p{
@@ -48,3 +52,4 @@ p{
 .about-page-content-image{
     grid-area: image;
 }
+
